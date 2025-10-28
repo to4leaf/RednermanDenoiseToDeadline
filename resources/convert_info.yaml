@@ -1,0 +1,20 @@
+
+
+renderman:
+    type: str
+    version: "24.3"
+    path : "/westworld/inhouse/tool/rez-packages/renderman/{}/platform-linux/arch-x86_64/RenderManProServer-{}/bin/denoise"
+
+denoise:
+    args:
+        - "-f"
+        - "{filter_json}"
+        - "--override"
+        - "filterbanks.*.strength"
+        - "{strength_value}"
+        - "--crossframe"
+        - "-v"
+        - "variance"
+
+
+

@@ -1,0 +1,71 @@
+configuration:
+  styleSheet:
+    title_background:
+      type: str
+      value: "background-color: rgb(50, 50,50); color : rgb(200, 200, 200);"
+
+    background_color:
+      type: str
+      value: "background-color : rgb(60, 60, 60); color : rgb(200, 200, 200);"
+
+    widget_color:
+      type: str
+      value: "background-color: rgb(78, 78, 78);
+              border-style : solid;
+              border-color: rgb(30, 30, 30);
+              border-width: 1px;
+              border-radius:2px;
+              color: rgb(200, 200, 200);
+              font: Bold;"
+
+    node_color:
+      type: str
+      value: "
+              QPushButton{
+              background-color: rgb(78, 78, 78);
+              border-style : solid;
+              border-color: rgb(78, 78, 78);
+              border-width: 2px;
+              border-radius:10px;
+              color: rgb(200, 200, 200);
+              font: Bold;
+              }
+              QPushButton:hover {
+                  background-color: rgb(210, 141, 5);
+                  border-style : solid;
+                  border-width: 2px;
+                  border-color: rgb(210, 141, 5);
+                  border-radius:10px;
+                  font: Bold;
+                  color: rgb(30, 30, 30);
+              }
+              "
+
+  deadline:
+    job_pool:
+      type : list
+      value :
+        - denoise
+        - katana
+        - common
+
+    job_second_pool:
+      type : list
+      value :
+        - ""
+        - common
+
+    job_group:
+      type: list
+      value:
+        - all
+        - group1
+        - group2
+
+    priority:
+      type: str
+      value: "100"
+
+
+
+
